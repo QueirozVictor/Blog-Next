@@ -284,15 +284,13 @@
         "arrays": [
             "Arrays são utilizados para representar listas de valores e aparecem constantemente no desenvolvimento web.",
 
-            "/image/js/js-exemplo8.png",
-
             "Além de armazenar dados, os arrays possuem métodos que facilitam muito o trabalho do desenvolvedor.",
 
             "Alguns dos mais importantes para quem está começando são map, filter, find e forEach.",
 
             "O método map, por exemplo, permite criar uma nova lista a partir dos elementos de outra lista.",
 
-            "/image/js/js-exemplo9.png",
+            "/image/js/js-exemplo8.png",
 
             "Você verá esse conceito frequentemente em React, principalmente quando precisar transformar uma lista de dados em vários elementos da interface."
         ],
@@ -301,7 +299,7 @@
         "objetos": [
             "Objetos permitem agrupar diferentes informações relacionadas dentro de uma mesma estrutura.",
 
-            "/image/js/js-exemplo10.png",
+            "/image/js/js-exemplo9.png",
 
             "Imagine um artigo do BlogNext. Em vez de guardar o título, autor, data e descrição em variáveis completamente separadas, podemos representar tudo através de um objeto.",
 
@@ -316,7 +314,7 @@
 
             "Por meio do JavaScript podemos acessar e modificar elementos do DOM.",
 
-            "/image/js/js-exemplo11.png",
+            "/image/js/js-exemplo10.png",
 
             "Podemos alterar textos, classes, atributos, criar elementos e responder às ações realizadas pelo usuário.",
 
@@ -329,7 +327,7 @@
 
             "Um clique, o envio de um formulário, o movimento do mouse ou uma tecla pressionada são exemplos de eventos.",
 
-            "/image/js/js-exemplo12.png",
+            "/image/js/js-exemplo11.png",
 
             "Com JavaScript podemos executar funções quando esses eventos acontecem.",
 
@@ -341,6 +339,8 @@
             "Em aplicações modernas, muitas operações não acontecem imediatamente. Buscar informações de uma API, por exemplo, depende de uma resposta que pode levar algum tempo.",
 
             "É nesse cenário que entram conceitos como Promises, async e await.",
+
+            "/image/js/js-exemplo12.png",
 
             "O objetivo é permitir que o JavaScript lide com operações que precisam aguardar algum resultado sem bloquear toda a aplicação.",
 
