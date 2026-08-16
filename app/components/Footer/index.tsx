@@ -54,7 +54,7 @@ const Footer = () => {
             <p className={styles.footer_call}>©2026 Blog-Next - Todos os direitos reservados.</p>
             <div className={styles.footer_link}>
                 <Link href="/">Início</Link>
-                <Link href="">Sobre</Link>
+                <Link href="/sobre">Sobre</Link>
             </div>
         </footer>
     )
