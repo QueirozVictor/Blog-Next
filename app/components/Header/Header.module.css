@@ -1,0 +1,35 @@
+.header{
+    background-color: #0C2660;
+    padding: 10px;
+}
+
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.header_logo{
+    width: 40vw;
+}
+@media (min-width: 650px){
+    .header_logo{
+        width: 10vw;
+    }
+}
+
+
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    color: #f1f1f1;
+    font-size: 20px;
+    padding: 10px;
+
+    border-radius: 5px;
+}
+
+
