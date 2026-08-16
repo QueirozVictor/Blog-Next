@@ -342,8 +342,6 @@
 
             "É nesse cenário que entram conceitos como Promises, async e await.",
 
-            "/image/js/js-exemplo13.png",
-
             "O objetivo é permitir que o JavaScript lide com operações que precisam aguardar algum resultado sem bloquear toda a aplicação.",
 
             "Você não precisa dominar programação assíncrona no primeiro dia, mas entender seus conceitos básicos será importante quando começar a trabalhar com APIs e aplicações maiores."
@@ -355,16 +353,7 @@
 
             "Uma boa ordem para começar é:",
 
-            "1. Variáveis e tipos de dados;",
-            "2. Operadores;",
-            "3. Condicionais;",
-            "4. Loops;",
-            "5. Funções;",
-            "6. Arrays;",
-            "7. Objetos;",
-            "8. DOM e eventos;",
-            "9. Métodos de arrays;",
-            "10. Promises, async e await.",
+            "/image/js/js-exemplo13.png",
 
             "Depois de dominar esses conceitos, você estará muito mais preparado para aprender ferramentas como React, Next.js e outras tecnologias do ecossistema JavaScript."
         ],
