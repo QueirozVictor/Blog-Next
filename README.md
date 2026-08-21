@@ -21,7 +21,7 @@ git clone https://github.com/QueirozVictor/Blog-Next.git
 Entre na pasta do projeto:
 
 ```bash
-cd Blog-Next
+cd my-app
 ```
 
 Instale as dependências:
