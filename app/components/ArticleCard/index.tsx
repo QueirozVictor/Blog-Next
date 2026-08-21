@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Artigo } from "@/app/types/artigo";
 import styles from "./ArticleCard.module.css"
 
@@ -12,10 +13,13 @@ const ArticleCard =  ({config} : Card) =>{
 
     return(
             <div className={styles.card}>
-                <img 
-                className={styles.card_image}
-                src={image} 
-                alt={`Imagem do Artigo ${title}`}/>
+                <Image
+                    className={styles.card_image}
+                    src={image}
+                    alt={`Imagem do Artigo ${title}`}
+                    width={500}
+                    height={300}
+                />
 
                 <div className={styles.card_info}>
                     <h3 className={styles.card_info_title}>{title}</h3>

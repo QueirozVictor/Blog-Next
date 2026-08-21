@@ -10,7 +10,7 @@ type Grid ={
 const ArticleGrid = ({artigos} : Grid) =>{
     return(
         <section className={styles.grid}>
-            {artigos.map(artigo => <Link key={artigo.id} href={`/article/${artigo.slug}`}><ArticleCard config={artigo}/>
+            {artigos.map(artigo => <Link key={artigo.id} href={`/artigos/${artigo.slug}`}><ArticleCard config={artigo}/>
             </Link>)}
         </section>
     )

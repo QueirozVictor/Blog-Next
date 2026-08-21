@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./Header.module.css"
 
@@ -6,10 +7,12 @@ const Header = () =>{
         <header className={styles.header}>
             <div className={styles.header_container}>
                 <Link href="/">
-                    <img 
+                    <Image 
                         src="/image/logo/logo.png" 
                         alt="Logo do site" 
                         className={styles.header_logo}
+                        width={200}
+                        height={100}
                         />
                 </Link>
 

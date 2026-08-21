@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./Footer.module.css"
 
@@ -15,10 +16,12 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 >
 
-                    <img 
+                    <Image
                     src="/image/social/linkedin.png" 
                     alt="Linkedin"
                     className={styles.footer_social_img}
+                    width={200}
+                    height={100}
                     />
 
                 </Link>
@@ -29,10 +32,12 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 >
 
-                    <img 
+                    <Image 
                     src="/image/social/instagram.png" 
                     alt="Intagram"
                     className={styles.footer_social_img}
+                    width={200}
+                    height={100}
                     />
 
                 </Link>
@@ -43,10 +48,12 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 >
 
-                    <img 
+                    <Image 
                     src="/image/social/github.png" 
                     alt="GitHub"
                     className={styles.footer_social_img}
+                    width={200}
+                    height={100}
                     />
 
                 </Link>

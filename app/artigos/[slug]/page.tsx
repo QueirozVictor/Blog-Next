@@ -1,7 +1,8 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import artigos from "@/app/lb/artigos.json"
 import { notFound } from "next/navigation"
-import styles from "./Article.module.css"
+import styles from "./Artigos.module.css"
 
 type Props = {
     params: Promise<{
@@ -75,11 +76,15 @@ return(
                         {valor.map((item, index) => {
                             if(item.startsWith("/")){
                                 return(
-                                    <img 
+                                    <Image 
                                     key={index}
                                     className={styles.article_container_img}
                                     src={item} 
-                                    alt={`Imagem do artigo ${artigo.title}`} />
+                                    alt={`Imagem do artigo ${artigo.title}`}
+                                    width={500}
+                                    height={300}
+                                    />
+                                    
                                 )
                             };
 
