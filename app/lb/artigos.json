@@ -1,179 +1,177 @@
 [
-    {
-        "id": 1,
-        "image":"/image/react/reactLogo.png",
-        "title": "React para quem está começando",
-        "author": "Equipe BlogNext",
-        "description": "Entenda os conceitos fundamentais do React e como começar seu primeiro projeto.",
-        "date": "10 de agosto de 2026",
-        "destaque": true,
-        "slug": "react-iniciante",
-        "content": {
-            "introducao": [
-                "Se você está começando no desenvolvimento front-end, provavelmente já encontrou o nome React em algum tutorial, vaga de emprego ou projeto. Mas afinal, o que é React e por que ele se tornou tão popular?",
+  {
+    "id": 1,
+    "image": "/image/react/reactLogo.png",
+    "title": "React para quem está começando",
+    "author": "Equipe BlogNext",
+    "description": "Entenda os conceitos fundamentais do React e como começar seu primeiro projeto.",
+    "date": "10 de agosto de 2026",
+    "destaque": true,
+    "slug": "react-iniciante",
+    "content": {
+      "introducao": [
+        "Se você está começando no desenvolvimento front-end, provavelmente já encontrou o nome React em algum tutorial, vaga de emprego ou projeto. Mas afinal, o que é React e por que ele se tornou tão popular?",
 
-                "Neste artigo, vamos conhecer os principais conceitos do React de uma maneira simples e prática, partindo do que você provavelmente já conhece de HTML, CSS e JavaScript."
-            ],
+        "Neste artigo, vamos conhecer os principais conceitos do React de uma maneira simples e prática, partindo do que você provavelmente já conhece de HTML, CSS e JavaScript."
+      ],
 
-            "sub-titulo": "O que é React?",
-            "oque-e-react": [
-                "React é uma biblioteca JavaScript utilizada para construir interfaces de usuário. Em vez de pensar em uma página inteira como um único bloco de código, podemos dividi-la em pequenas partes reutilizáveis chamadas componentes.",
+      "sub-titulo": "O que é React?",
+      "oque-e-react": [
+        "React é uma biblioteca JavaScript utilizada para construir interfaces de usuário. Em vez de pensar em uma página inteira como um único bloco de código, podemos dividi-la em pequenas partes reutilizáveis chamadas componentes.",
 
-                "Um botão, um menu, um card de produto ou até mesmo uma página inteira pode ser representado por um componente.",
+        "Um botão, um menu, um card de produto ou até mesmo uma página inteira pode ser representado por um componente.",
 
-                "A própria documentação do React apresenta os componentes como uma das bases para a construção de interfaces, destacando que eles podem ser pequenos, como um botão, ou grandes, como uma página completa.",
+        "A própria documentação do React apresenta os componentes como uma das bases para a construção de interfaces, destacando que eles podem ser pequenos, como um botão, ou grandes, como uma página completa.",
 
-                "/image/react/react-exemplo1.png",
+        "/image/react/react-exemplo1.png",
 
-                "A ideia principal é simples: criar pequenos blocos de interface e combiná-los para construir algo maior."
+        "A ideia principal é simples: criar pequenos blocos de interface e combiná-los para construir algo maior."
+      ],
+      "sub-titulo2": "O que são componentes?",
+      "componentes": [
+        "Componentes são funções JavaScript que retornam a interface que queremos exibir.",
 
-        ],
-            "sub-titulo2": "O que são componentes?",
-            "componentes": [
-                "Componentes são funções JavaScript que retornam a interface que queremos exibir.",
+        "/image/react/react-exemplo2.png",
 
-                "/image/react/react-exemplo2.png",
+        "Os componentes também podem ser reutilizados várias vezes. Essa composição é uma das ideias fundamentais do React."
+      ],
 
-                "Os componentes também podem ser reutilizados várias vezes. Essa composição é uma das ideias fundamentais do React."
-            ],
+      "sub-titulo3": "JSX: HTML dentro do JavaScript?",
+      "jsx": [
+        "Ao começar com React, você provavelmente vai estranhar algo como:",
 
-            "sub-titulo3": "JSX: HTML dentro do JavaScript?",
-            "jsx": [
-                "Ao começar com React, você provavelmente vai estranhar algo como:",
+        "/image/react/react-exemplo3.png",
 
-                "/image/react/react-exemplo3.png",
+        "Isso parece HTML, mas está dentro de uma função JavaScript.",
 
-                "Isso parece HTML, mas está dentro de uma função JavaScript.",
+        "Essa sintaxe é chamada de JSX.",
 
-                "Essa sintaxe é chamada de JSX.",
+        "O JSX permite escrever uma marcação semelhante ao HTML dentro do JavaScript. Apesar de parecer HTML, existem algumas diferenças.",
 
-                "O JSX permite escrever uma marcação semelhante ao HTML dentro do JavaScript. Apesar de parecer HTML, existem algumas diferenças.",
+        "/image/react/react-exemplo4.png"
+      ],
+      "sub-titulo4": "Como colocar JavaScript dentro do JSX?",
+      "jsx2": [
+        "Uma das coisas mais interessantes do JSX é poder utilizar JavaScript entre chaves {}.",
 
-                "/image/react/react-exemplo4.png"
-            ],
-            "sub-titulo4": "Como colocar JavaScript dentro do JSX?",
-            "jsx2": [
-                "Uma das coisas mais interessantes do JSX é poder utilizar JavaScript entre chaves {}.",
+        "/image/react/react-exemplo5.png"
+      ],
+      "sub-titulo5": "O que são Props?",
+      "props": [
+        "Agora imagine que você tenha um componente de card:",
 
-                "/image/react/react-exemplo5.png"
-            ],
-            "sub-titulo5": "O que são Props?",
-            "props": [
-                "Agora imagine que você tenha um componente de card:",
+        "/image/react/react-exemplo6.png",
 
-                "/image/react/react-exemplo6.png",
-                
-                "O problema é que esse componente sempre mostrará o mesmo conteúdo.",
+        "O problema é que esse componente sempre mostrará o mesmo conteúdo.",
 
-                "As props permitem passar informações de um componente para outro.",
+        "As props permitem passar informações de um componente para outro.",
 
-                "/image/react/react-exemplo7.png",
+        "/image/react/react-exemplo7.png",
 
-                "Agora temos o mesmo componente sendo reutilizado com dados diferentes.",
+        "Agora temos o mesmo componente sendo reutilizado com dados diferentes.",
 
-                "Props são uma das formas utilizadas pelo React para que componentes compartilhem informações. Elas podem receber valores como strings, números, arrays, objetos e funções."
-            ],
-            "sub-titulo6": "E o State?",
-            "estado": [
-                "Até agora nossos componentes apenas exibem informações.",
+        "Props são uma das formas utilizadas pelo React para que componentes compartilhem informações. Elas podem receber valores como strings, números, arrays, objetos e funções."
+      ],
+      "sub-titulo6": "E o State?",
+      "estado": [
+        "Até agora nossos componentes apenas exibem informações.",
 
-                "Mas e quando alguma informação precisa mudar?",
+        "Mas e quando alguma informação precisa mudar?",
 
-                "Imagine um contador:",
+        "Imagine um contador:",
 
-                "contador: 0",
-                "[ + ]",
+        "contador: 0",
+        "[ + ]",
 
-                "Quando o usuário clicar no botão, queremos que o número passe para 1, depois 2, depois 3.",
+        "Quando o usuário clicar no botão, queremos que o número passe para 1, depois 2, depois 3.",
 
-                "Para situações em que a interface precisa lembrar informações que mudam ao longo do tempo, o React utiliza o conceito de state."
-            ],
-            "sub-titulo7": "Um dos Hooks utilizados para isso é o useState:",
-            "estado2": [
-                "/image/react/react-exemplo8.png",
+        "Para situações em que a interface precisa lembrar informações que mudam ao longo do tempo, o React utiliza o conceito de state."
+      ],
+      "sub-titulo7": "Um dos Hooks utilizados para isso é o useState:",
+      "estado2": [
+        "/image/react/react-exemplo8.png",
 
-                "Quando o estado é atualizado, o React pode atualizar a interface para refletir o novo valor. O useState é justamente o Hook utilizado para adicionar esse tipo de estado a um componente."
-            ],
+        "Quando o estado é atualizado, o React pode atualizar a interface para refletir o novo valor. O useState é justamente o Hook utilizado para adicionar esse tipo de estado a um componente."
+      ],
 
-            "sub-titulo8": "Eventos e interação",
-            "eventos-e-lista": [
-                "React também permite responder às ações do usuário.",
+      "sub-titulo8": "Eventos e interação",
+      "eventos-e-lista": [
+        "React também permite responder às ações do usuário.",
 
-                "/image/react/react-exemplo9.png",
+        "/image/react/react-exemplo9.png",
 
-                "Nesse exemplo, onClick está associado à função que será executada quando o usuário clicar.",
+        "Nesse exemplo, onClick está associado à função que será executada quando o usuário clicar.",
 
-                "Eventos podem ser utilizados para criar interfaces interativas, como formulários, menus, galerias, contadores e muitas outras funcionalidades."
-            ],
+        "Eventos podem ser utilizados para criar interfaces interativas, como formulários, menus, galerias, contadores e muitas outras funcionalidades."
+      ],
 
-            "sub-titulo9": "Renderizando listas",
-            "eventos-e-lista-2": [
-                "Outro recurso muito utilizado em aplicações React é a renderização de listas.",
+      "sub-titulo9": "Renderizando listas",
+      "eventos-e-lista-2": [
+        "Outro recurso muito utilizado em aplicações React é a renderização de listas.",
 
-                "/image/react/react-exemplo11.png",
+        "/image/react/react-exemplo11.png",
 
-                "Isso é especialmente útil quando os dados vêm de um JSON, de uma API ou de um banco de dados.",
+        "Isso é especialmente útil quando os dados vêm de um JSON, de uma API ou de um banco de dados.",
 
-                "É exatamente a mesma ideia que utilizamos quando transformamos uma lista de artigos em vários ArticleCard no BlogNext."
-            ],
+        "É exatamente a mesma ideia que utilizamos quando transformamos uma lista de artigos em vários ArticleCard no BlogNext."
+      ],
 
-            "sub-titulo10": "Juntando tudo: um pequeno card",
-            "exemplo-pratico": [
-                "/image/react/react-exemplo12.png",
+      "sub-titulo10": "Juntando tudo: um pequeno card",
+      "exemplo-pratico": [
+        "/image/react/react-exemplo12.png",
 
-                "Perceba o que aconteceu:",
-                "Componente → Props → JSX → Interface reutilizável",
-                "Essa maneira de pensar é muito importante para quem está começando com React."
-            ],
+        "Perceba o que aconteceu:",
+        "Componente → Props → JSX → Interface reutilizável",
+        "Essa maneira de pensar é muito importante para quem está começando com React."
+      ],
 
-            "sub-titulo11": "React é difícil?",
-            "pratica": [
-                "No começo, alguns conceitos podem parecer estranhos.",
+      "sub-titulo11": "React é difícil?",
+      "pratica": [
+        "No começo, alguns conceitos podem parecer estranhos.",
 
-                "Você provavelmente vai se perguntar:",
+        "Você provavelmente vai se perguntar:",
 
-                "Por que estou escrevendo HTML dentro do JavaScript?",
+        "Por que estou escrevendo HTML dentro do JavaScript?",
 
-                "Depois:",
+        "Depois:",
 
-                "Por que preciso de componentes?",
+        "Por que preciso de componentes?",
 
-                "E finalmente:",
+        "E finalmente:",
 
-                "Por que existe useState?",
+        "Por que existe useState?",
 
-                "Essas dúvidas são normais.",
+        "Essas dúvidas são normais.",
 
-                "O importante é não tentar aprender todo o React de uma vez. Comece dominando os fundamentos:",
+        "O importante é não tentar aprender todo o React de uma vez. Comece dominando os fundamentos:",
 
-                "1. JavaScript;",
-                "2. componentes;",
-                "3. JSX;",
-                "4. props;",
-                "5. renderização de listas;",
-                "6. eventos;",
-                "7. state;",
-                "8. Hooks.",
+        "1. JavaScript;",
+        "2. componentes;",
+        "3. JSX;",
+        "4. props;",
+        "5. renderização de listas;",
+        "6. eventos;",
+        "7. state;",
+        "8. Hooks.",
 
-                "A própria documentação oficial organiza o aprendizado inicial em torno desses conceitos, começando pela construção da interface e avançando para interatividade e compartilhamento de dados."
-            ],
-            "sub-titulo-final": "Conclusão",
-            "conclusao": [
+        "A própria documentação oficial organiza o aprendizado inicial em torno desses conceitos, começando pela construção da interface e avançando para interatividade e compartilhamento de dados."
+      ],
+      "sub-titulo-final": "Conclusão",
+      "conclusao": [
+        "React não precisa ser visto como uma tecnologia complicada.",
 
-                "React não precisa ser visto como uma tecnologia complicada.",
+        "No fundo, você está utilizando JavaScript para construir interfaces divididas em componentes reutilizáveis.",
 
-                "No fundo, você está utilizando JavaScript para construir interfaces divididas em componentes reutilizáveis.",
+        "Se você já conhece HTML, CSS e JavaScript, o próximo passo é entender como esses conhecimentos se encaixam dentro da maneira de pensar do React.",
 
-                "Se você já conhece HTML, CSS e JavaScript, o próximo passo é entender como esses conhecimentos se encaixam dentro da maneira de pensar do React.",
+        "Comece pequeno. Crie um botão, depois um card, depois uma lista de cards. Quando perceber, você estará construindo aplicações inteiras a partir desses pequenos blocos.",
 
-                "Comece pequeno. Crie um botão, depois um card, depois uma lista de cards. Quando perceber, você estará construindo aplicações inteiras a partir desses pequenos blocos.",
+        "E essa é justamente uma das grandes ideias por trás do React: dividir uma interface complexa em partes menores, reutilizáveis e fáceis de organizar."
+      ]
+    }
+  },
 
-                "E essa é justamente uma das grandes ideias por trás do React: dividir uma interface complexa em partes menores, reutilizáveis e fáceis de organizar."
-            ]
-        }
-    },
-
-    {
+  {
     "id": 2,
     "image": "/image/js/jsLogo.png",
     "title": "O que você precisa saber sobre JavaScript",
@@ -183,197 +181,197 @@
     "destaque": true,
     "slug": "javascript-para-iniciantes",
     "content": {
-        "introducao": [
-            "Se você quer aprender desenvolvimento web, JavaScript é uma das tecnologias que você inevitavelmente vai encontrar pelo caminho.",
+      "introducao": [
+        "Se você quer aprender desenvolvimento web, JavaScript é uma das tecnologias que você inevitavelmente vai encontrar pelo caminho.",
 
-            "HTML é responsável pela estrutura, CSS pela aparência e JavaScript adiciona comportamento e interatividade às páginas. Mas antes de partir para frameworks como React, é importante construir uma boa base na própria linguagem.",
+        "HTML é responsável pela estrutura, CSS pela aparência e JavaScript adiciona comportamento e interatividade às páginas. Mas antes de partir para frameworks como React, é importante construir uma boa base na própria linguagem.",
 
-            "Neste artigo, vamos conhecer os principais conceitos de JavaScript que você precisa entender para continuar evoluindo como desenvolvedor."
-        ],
+        "Neste artigo, vamos conhecer os principais conceitos de JavaScript que você precisa entender para continuar evoluindo como desenvolvedor."
+      ],
 
-        "sub-titulo": "O que é JavaScript?",
-        "o-que-e-javascript": [
-            "JavaScript é uma linguagem de programação utilizada principalmente para adicionar comportamento e interatividade às páginas e aplicações web.",
+      "sub-titulo": "O que é JavaScript?",
+      "o-que-e-javascript": [
+        "JavaScript é uma linguagem de programação utilizada principalmente para adicionar comportamento e interatividade às páginas e aplicações web.",
 
-            "Com JavaScript podemos responder a ações do usuário, alterar elementos da página, validar formulários, trabalhar com dados, fazer requisições para APIs e construir aplicações completas.",
+        "Com JavaScript podemos responder a ações do usuário, alterar elementos da página, validar formulários, trabalhar com dados, fazer requisições para APIs e construir aplicações completas.",
 
-            "/image/js/js-exemplo1.png",
+        "/image/js/js-exemplo1.png",
 
-            "Uma das grandes vantagens do JavaScript é que ele funciona diretamente nos navegadores modernos, permitindo criar experiências interativas sem precisar instalar nada no computador do usuário."
-        ],
+        "Uma das grandes vantagens do JavaScript é que ele funciona diretamente nos navegadores modernos, permitindo criar experiências interativas sem precisar instalar nada no computador do usuário."
+      ],
 
-        "sub-titulo2": "Variáveis: guardando informações",
-        "variaveis": [
-            "Um dos primeiros conceitos que você precisa aprender em JavaScript são as variáveis.",
+      "sub-titulo2": "Variáveis: guardando informações",
+      "variaveis": [
+        "Um dos primeiros conceitos que você precisa aprender em JavaScript são as variáveis.",
 
-            "Variáveis são utilizadas para armazenar informações que podemos utilizar posteriormente no nosso programa.",
+        "Variáveis são utilizadas para armazenar informações que podemos utilizar posteriormente no nosso programa.",
 
-            "/image/js/js-exemplo2.png",
+        "/image/js/js-exemplo2.png",
 
-            "Atualmente, as formas mais utilizadas para declarar variáveis são let e const.",
+        "Atualmente, as formas mais utilizadas para declarar variáveis são let e const.",
 
-            "Use const quando o valor não precisar ser reatribuído e let quando você precisar alterar o valor posteriormente.",
+        "Use const quando o valor não precisar ser reatribuído e let quando você precisar alterar o valor posteriormente.",
 
-            "Entender a diferença entre os dois é importante para escrever um código mais previsível e organizado."
-        ],
+        "Entender a diferença entre os dois é importante para escrever um código mais previsível e organizado."
+      ],
 
-        "sub-titulo3": "Tipos de dados",
-        "tipos-de-dados": [
-            "JavaScript trabalha com diferentes tipos de dados. Alguns dos mais importantes para quem está começando são strings, números, booleanos, arrays e objetos.",
+      "sub-titulo3": "Tipos de dados",
+      "tipos-de-dados": [
+        "JavaScript trabalha com diferentes tipos de dados. Alguns dos mais importantes para quem está começando são strings, números, booleanos, arrays e objetos.",
 
-            "/image/js/js-exemplo3.png",
+        "/image/js/js-exemplo3.png",
 
-            "Strings representam textos, números representam valores numéricos e booleanos representam verdadeiro ou falso.",
+        "Strings representam textos, números representam valores numéricos e booleanos representam verdadeiro ou falso.",
 
-            "Arrays são utilizados para armazenar listas de valores, enquanto objetos permitem representar informações organizadas em propriedades."
-        ],
+        "Arrays são utilizados para armazenar listas de valores, enquanto objetos permitem representar informações organizadas em propriedades."
+      ],
 
-        "sub-titulo4": "Operadores e comparações",
-        "operadores": [
-            "Os operadores permitem realizar cálculos, comparações e operações entre valores.",
+      "sub-titulo4": "Operadores e comparações",
+      "operadores": [
+        "Os operadores permitem realizar cálculos, comparações e operações entre valores.",
 
-            "/image/js/js-exemplo4.png",
+        "/image/js/js-exemplo4.png",
 
-            "Entre os operadores mais comuns estão os operadores matemáticos, como +, -, * e /, além dos operadores de comparação.",
+        "Entre os operadores mais comuns estão os operadores matemáticos, como +, -, * e /, além dos operadores de comparação.",
 
-            "Um conceito importante para quem está começando é entender a diferença entre =, == e ===.",
+        "Um conceito importante para quem está começando é entender a diferença entre =, == e ===.",
 
-            "O sinal = é utilizado para atribuição. Já == e === são utilizados para comparação, sendo === geralmente preferível porque também verifica o tipo do valor."
-        ],
+        "O sinal = é utilizado para atribuição. Já == e === são utilizados para comparação, sendo === geralmente preferível porque também verifica o tipo do valor."
+      ],
 
-        "sub-titulo5": "Condicionais: tomando decisões",
-        "condicionais": [
-            "Programas frequentemente precisam tomar decisões. Por exemplo: verificar se um usuário está logado, se uma idade é suficiente ou se um produto está disponível.",
+      "sub-titulo5": "Condicionais: tomando decisões",
+      "condicionais": [
+        "Programas frequentemente precisam tomar decisões. Por exemplo: verificar se um usuário está logado, se uma idade é suficiente ou se um produto está disponível.",
 
-            "Para isso utilizamos estruturas condicionais como if e else.",
+        "Para isso utilizamos estruturas condicionais como if e else.",
 
-            "/image/js/js-exemplo5.png",
+        "/image/js/js-exemplo5.png",
 
-            "A ideia é simples: se uma determinada condição for verdadeira, um trecho de código será executado. Caso contrário, podemos executar outro trecho.",
+        "A ideia é simples: se uma determinada condição for verdadeira, um trecho de código será executado. Caso contrário, podemos executar outro trecho.",
 
-            "Aprender a trabalhar com condições é fundamental porque praticamente toda aplicação possui algum tipo de regra ou decisão."
-        ],
+        "Aprender a trabalhar com condições é fundamental porque praticamente toda aplicação possui algum tipo de regra ou decisão."
+      ],
 
-        "sub-titulo6": "Loops: repetindo tarefas",
-        "loops": [
-            "Imagine que você tenha uma lista com vários produtos e precise realizar uma operação para cada um deles. Fazer isso manualmente não seria uma boa ideia.",
+      "sub-titulo6": "Loops: repetindo tarefas",
+      "loops": [
+        "Imagine que você tenha uma lista com vários produtos e precise realizar uma operação para cada um deles. Fazer isso manualmente não seria uma boa ideia.",
 
-            "É justamente para situações como essa que existem os loops e métodos de iteração.",
+        "É justamente para situações como essa que existem os loops e métodos de iteração.",
 
-            "/image/js/js-exemplo6.png",
+        "/image/js/js-exemplo6.png",
 
-            "Entre as estruturas tradicionais estão for e while. No desenvolvimento moderno com JavaScript, também é muito comum utilizar métodos como forEach e map.",
+        "Entre as estruturas tradicionais estão for e while. No desenvolvimento moderno com JavaScript, também é muito comum utilizar métodos como forEach e map.",
 
-            "Essas ferramentas são especialmente importantes quando trabalhamos com listas de dados."
-        ],
+        "Essas ferramentas são especialmente importantes quando trabalhamos com listas de dados."
+      ],
 
-        "sub-titulo7": "Funções: reutilizando código",
-        "funcoes": [
-            "Funções são blocos de código criados para executar determinada tarefa.",
+      "sub-titulo7": "Funções: reutilizando código",
+      "funcoes": [
+        "Funções são blocos de código criados para executar determinada tarefa.",
 
-            "/image/js/js-exemplo7.png",
+        "/image/js/js-exemplo7.png",
 
-            "Uma função pode receber informações através de parâmetros e também pode retornar um resultado.",
+        "Uma função pode receber informações através de parâmetros e também pode retornar um resultado.",
 
-            "Aprender funções é essencial porque elas aparecem em praticamente todos os projetos JavaScript.",
+        "Aprender funções é essencial porque elas aparecem em praticamente todos os projetos JavaScript.",
 
-            "Além das funções tradicionais, você também encontrará as chamadas arrow functions, muito utilizadas em projetos modernos."
-        ],
+        "Além das funções tradicionais, você também encontrará as chamadas arrow functions, muito utilizadas em projetos modernos."
+      ],
 
-        "sub-titulo8": "Arrays e métodos importantes",
-        "arrays": [
-            "Arrays são utilizados para representar listas de valores e aparecem constantemente no desenvolvimento web.",
+      "sub-titulo8": "Arrays e métodos importantes",
+      "arrays": [
+        "Arrays são utilizados para representar listas de valores e aparecem constantemente no desenvolvimento web.",
 
-            "Além de armazenar dados, os arrays possuem métodos que facilitam muito o trabalho do desenvolvedor.",
+        "Além de armazenar dados, os arrays possuem métodos que facilitam muito o trabalho do desenvolvedor.",
 
-            "Alguns dos mais importantes para quem está começando são map, filter, find e forEach.",
+        "Alguns dos mais importantes para quem está começando são map, filter, find e forEach.",
 
-            "O método map, por exemplo, permite criar uma nova lista a partir dos elementos de outra lista.",
+        "O método map, por exemplo, permite criar uma nova lista a partir dos elementos de outra lista.",
 
-            "/image/js/js-exemplo8.png",
+        "/image/js/js-exemplo8.png",
 
-            "Você verá esse conceito frequentemente em React, principalmente quando precisar transformar uma lista de dados em vários elementos da interface."
-        ],
+        "Você verá esse conceito frequentemente em React, principalmente quando precisar transformar uma lista de dados em vários elementos da interface."
+      ],
 
-        "sub-titulo9": "Objetos: organizando informações",
-        "objetos": [
-            "Objetos permitem agrupar diferentes informações relacionadas dentro de uma mesma estrutura.",
+      "sub-titulo9": "Objetos: organizando informações",
+      "objetos": [
+        "Objetos permitem agrupar diferentes informações relacionadas dentro de uma mesma estrutura.",
 
-            "/image/js/js-exemplo9.png",
+        "/image/js/js-exemplo9.png",
 
-            "Imagine um artigo do BlogNext. Em vez de guardar o título, autor, data e descrição em variáveis completamente separadas, podemos representar tudo através de um objeto.",
+        "Imagine um artigo do BlogNext. Em vez de guardar o título, autor, data e descrição em variáveis completamente separadas, podemos representar tudo através de um objeto.",
 
-            "Essa estrutura é muito utilizada quando trabalhamos com APIs, JSON e bancos de dados.",
+        "Essa estrutura é muito utilizada quando trabalhamos com APIs, JSON e bancos de dados.",
 
-            "É justamente por isso que entender objetos em JavaScript será extremamente importante quando você começar a trabalhar com aplicações maiores."
-        ],
+        "É justamente por isso que entender objetos em JavaScript será extremamente importante quando você começar a trabalhar com aplicações maiores."
+      ],
 
-        "sub-titulo10": "DOM e interação com páginas",
-        "dom": [
-            "O DOM, sigla para Document Object Model, representa a estrutura da página HTML que o navegador criou.",
+      "sub-titulo10": "DOM e interação com páginas",
+      "dom": [
+        "O DOM, sigla para Document Object Model, representa a estrutura da página HTML que o navegador criou.",
 
-            "Por meio do JavaScript podemos acessar e modificar elementos do DOM.",
+        "Por meio do JavaScript podemos acessar e modificar elementos do DOM.",
 
-            "/image/js/js-exemplo10.png",
+        "/image/js/js-exemplo10.png",
 
-            "Podemos alterar textos, classes, atributos, criar elementos e responder às ações realizadas pelo usuário.",
+        "Podemos alterar textos, classes, atributos, criar elementos e responder às ações realizadas pelo usuário.",
 
-            "Embora frameworks como React utilizem uma abordagem diferente para construir interfaces, entender o funcionamento básico do DOM continua sendo importante para quem está aprendendo desenvolvimento web."
-        ],
+        "Embora frameworks como React utilizem uma abordagem diferente para construir interfaces, entender o funcionamento básico do DOM continua sendo importante para quem está aprendendo desenvolvimento web."
+      ],
 
-        "sub-titulo11": "Eventos",
-        "eventos": [
-            "Eventos representam acontecimentos que podem ocorrer durante a utilização de uma aplicação.",
+      "sub-titulo11": "Eventos",
+      "eventos": [
+        "Eventos representam acontecimentos que podem ocorrer durante a utilização de uma aplicação.",
 
-            "Um clique, o envio de um formulário, o movimento do mouse ou uma tecla pressionada são exemplos de eventos.",
+        "Um clique, o envio de um formulário, o movimento do mouse ou uma tecla pressionada são exemplos de eventos.",
 
-            "/image/js/js-exemplo11.png",
+        "/image/js/js-exemplo11.png",
 
-            "Com JavaScript podemos executar funções quando esses eventos acontecem.",
+        "Com JavaScript podemos executar funções quando esses eventos acontecem.",
 
-            "Esse conceito é fundamental para transformar uma página estática em uma interface interativa."
-        ],
+        "Esse conceito é fundamental para transformar uma página estática em uma interface interativa."
+      ],
 
-        "sub-titulo12": "JavaScript assíncrono",
-        "assincrono": [
-            "Em aplicações modernas, muitas operações não acontecem imediatamente. Buscar informações de uma API, por exemplo, depende de uma resposta que pode levar algum tempo.",
+      "sub-titulo12": "JavaScript assíncrono",
+      "assincrono": [
+        "Em aplicações modernas, muitas operações não acontecem imediatamente. Buscar informações de uma API, por exemplo, depende de uma resposta que pode levar algum tempo.",
 
-            "É nesse cenário que entram conceitos como Promises, async e await.",
+        "É nesse cenário que entram conceitos como Promises, async e await.",
 
-            "/image/js/js-exemplo12.png",
+        "/image/js/js-exemplo12.png",
 
-            "O objetivo é permitir que o JavaScript lide com operações que precisam aguardar algum resultado sem bloquear toda a aplicação.",
+        "O objetivo é permitir que o JavaScript lide com operações que precisam aguardar algum resultado sem bloquear toda a aplicação.",
 
-            "Você não precisa dominar programação assíncrona no primeiro dia, mas entender seus conceitos básicos será importante quando começar a trabalhar com APIs e aplicações maiores."
-        ],
+        "Você não precisa dominar programação assíncrona no primeiro dia, mas entender seus conceitos básicos será importante quando começar a trabalhar com APIs e aplicações maiores."
+      ],
 
-        "sub-titulo13": "O que aprender primeiro?",
-        "ordem-de-estudo": [
-            "JavaScript possui muitos recursos e pode parecer enorme no começo. Por isso, tentar aprender tudo de uma vez pode acabar atrapalhando.",
+      "sub-titulo13": "O que aprender primeiro?",
+      "ordem-de-estudo": [
+        "JavaScript possui muitos recursos e pode parecer enorme no começo. Por isso, tentar aprender tudo de uma vez pode acabar atrapalhando.",
 
-            "Uma boa ordem para começar é:",
+        "Uma boa ordem para começar é:",
 
-            "/image/js/js-exemplo13.png",
+        "/image/js/js-exemplo13.png",
 
-            "Depois de dominar esses conceitos, você estará muito mais preparado para aprender ferramentas como React, Next.js e outras tecnologias do ecossistema JavaScript."
-        ],
+        "Depois de dominar esses conceitos, você estará muito mais preparado para aprender ferramentas como React, Next.js e outras tecnologias do ecossistema JavaScript."
+      ],
 
-        "sub-titulo-final": "Conclusão",
-        "conclusao": [
-            "Você não precisa conhecer todo o JavaScript para começar a desenvolver. O mais importante é construir uma base sólida nos conceitos fundamentais.",
+      "sub-titulo-final": "Conclusão",
+      "conclusao": [
+        "Você não precisa conhecer todo o JavaScript para começar a desenvolver. O mais importante é construir uma base sólida nos conceitos fundamentais.",
 
-            "Variáveis, condições, loops, funções, arrays e objetos aparecem constantemente em projetos reais.",
+        "Variáveis, condições, loops, funções, arrays e objetos aparecem constantemente em projetos reais.",
 
-            "Quando esses conceitos começam a fazer sentido, tecnologias como React deixam de parecer tão misteriosas, porque você passa a entender o JavaScript que existe por trás delas.",
+        "Quando esses conceitos começam a fazer sentido, tecnologias como React deixam de parecer tão misteriosas, porque você passa a entender o JavaScript que existe por trás delas.",
 
-            "Aprenda um conceito de cada vez, pratique criando pequenos projetos e não tenha pressa para avançar.",
+        "Aprenda um conceito de cada vez, pratique criando pequenos projetos e não tenha pressa para avançar.",
 
-            "Uma boa base de JavaScript vale muito mais do que decorar dezenas de recursos sem entender como utilizá-los."
-        ]
+        "Uma boa base de JavaScript vale muito mais do que decorar dezenas de recursos sem entender como utilizá-los."
+      ]
     }
-},
+  },
 
-    {
+  {
     "id": 3,
     "image": "/image/git/gitLogo.png",
     "title": "Git sem complicação",
@@ -383,206 +381,206 @@
     "destaque": true,
     "slug": "git-sem-complicacao",
     "content": {
-        "introducao": [
-            "Se você está começando a programar, provavelmente já ouviu falar em Git e GitHub. Talvez também já tenha visto comandos como git add, git commit e git push e pensado: por onde eu começo?",
+      "introducao": [
+        "Se você está começando a programar, provavelmente já ouviu falar em Git e GitHub. Talvez também já tenha visto comandos como git add, git commit e git push e pensado: por onde eu começo?",
 
-            "A boa notícia é que você não precisa conhecer dezenas de comandos para começar a utilizar Git.",
+        "A boa notícia é que você não precisa conhecer dezenas de comandos para começar a utilizar Git.",
 
-            "Neste artigo, vamos entender o que é Git, qual problema ele resolve e conhecer o fluxo básico que você pode utilizar nos seus próprios projetos."
-        ],
+        "Neste artigo, vamos entender o que é Git, qual problema ele resolve e conhecer o fluxo básico que você pode utilizar nos seus próprios projetos."
+      ],
 
-        "sub-titulo": "O que é Git?",
-        "o-que-e-git": [
-            "Git é um sistema de controle de versão. Ele permite acompanhar as alterações realizadas em um projeto ao longo do tempo.",
+      "sub-titulo": "O que é Git?",
+      "o-que-e-git": [
+        "Git é um sistema de controle de versão. Ele permite acompanhar as alterações realizadas em um projeto ao longo do tempo.",
 
-            "Imagine que você está desenvolvendo um site e, depois de algumas horas, percebe que uma alteração que fez acabou quebrando uma parte importante da aplicação.",
+        "Imagine que você está desenvolvendo um site e, depois de algumas horas, percebe que uma alteração que fez acabou quebrando uma parte importante da aplicação.",
 
-            "Sem um sistema de controle de versão, voltar para uma versão anterior pode ser bastante trabalhoso.",
+        "Sem um sistema de controle de versão, voltar para uma versão anterior pode ser bastante trabalhoso.",
 
-            "/image/git/git-exemplo1.png",
+        "/image/git/git-exemplo1.png",
 
-            "Com Git, podemos registrar diferentes versões do projeto e consultar ou recuperar alterações quando necessário.",
+        "Com Git, podemos registrar diferentes versões do projeto e consultar ou recuperar alterações quando necessário.",
 
-            "Por isso, Git se tornou uma ferramenta fundamental no desenvolvimento de software."
-        ],
+        "Por isso, Git se tornou uma ferramenta fundamental no desenvolvimento de software."
+      ],
 
-        "sub-titulo2": "Git e GitHub são a mesma coisa?",
-        "git-e-github": [
-            "Não. Essa é uma das primeiras diferenças que você precisa entender.",
+      "sub-titulo2": "Git e GitHub são a mesma coisa?",
+      "git-e-github": [
+        "Não. Essa é uma das primeiras diferenças que você precisa entender.",
 
-            "Git é o sistema de controle de versão instalado no seu computador.",
+        "Git é o sistema de controle de versão instalado no seu computador.",
 
-            "GitHub é uma plataforma que permite armazenar repositórios Git remotamente e também oferece recursos para colaboração entre desenvolvedores.",
+        "GitHub é uma plataforma que permite armazenar repositórios Git remotamente e também oferece recursos para colaboração entre desenvolvedores.",
 
-            "/image/git/git-exemplo2.png",
+        "/image/git/git-exemplo2.png",
 
-            "De maneira simples: você pode usar Git sem GitHub, mas GitHub utiliza Git como parte fundamental do seu funcionamento.",
+        "De maneira simples: você pode usar Git sem GitHub, mas GitHub utiliza Git como parte fundamental do seu funcionamento.",
 
-            "Existem também outras plataformas semelhantes, como GitLab e Bitbucket."
-        ],
+        "Existem também outras plataformas semelhantes, como GitLab e Bitbucket."
+      ],
 
-        "sub-titulo3": "O que é um repositório?",
-        "repositorio": [
-            "Um repositório é o local onde o Git acompanha os arquivos e o histórico de alterações de um projeto.",
+      "sub-titulo3": "O que é um repositório?",
+      "repositorio": [
+        "Um repositório é o local onde o Git acompanha os arquivos e o histórico de alterações de um projeto.",
 
-            "Um projeto pode ter um repositório local no seu computador e, posteriormente, esse mesmo projeto pode ser conectado a um repositório remoto.",
+        "Um projeto pode ter um repositório local no seu computador e, posteriormente, esse mesmo projeto pode ser conectado a um repositório remoto.",
 
-            "/image/git/git-exemplo3.png",
+        "/image/git/git-exemplo3.png",
 
-            "Quando você cria um repositório Git dentro de uma pasta, o Git passa a acompanhar as alterações realizadas nos arquivos daquela pasta."
-        ],
+        "Quando você cria um repositório Git dentro de uma pasta, o Git passa a acompanhar as alterações realizadas nos arquivos daquela pasta."
+      ],
 
-        "sub-titulo4": "Criando seu primeiro repositório",
-        "git-init": [
-            "Para transformar uma pasta em um repositório Git, utilizamos o comando git init.",
+      "sub-titulo4": "Criando seu primeiro repositório",
+      "git-init": [
+        "Para transformar uma pasta em um repositório Git, utilizamos o comando git init.",
 
-            "/image/git/git-exemplo4.png",
+        "/image/git/git-exemplo4.png",
 
-            "Depois de executar esse comando, o Git cria uma estrutura interna responsável por armazenar o histórico e as informações do repositório.",
+        "Depois de executar esse comando, o Git cria uma estrutura interna responsável por armazenar o histórico e as informações do repositório.",
 
-            "A partir desse momento, você pode começar a acompanhar as alterações realizadas no projeto."
-        ],
+        "A partir desse momento, você pode começar a acompanhar as alterações realizadas no projeto."
+      ],
 
-        "sub-titulo5": "Git status: descubra o que mudou",
-        "git-status": [
-            "Um dos comandos mais importantes para quem está começando é o git status.",
+      "sub-titulo5": "Git status: descubra o que mudou",
+      "git-status": [
+        "Um dos comandos mais importantes para quem está começando é o git status.",
 
-            "/image/git/git-exemplo5.png",
+        "/image/git/git-exemplo5.png",
 
-            "Ele mostra o estado atual do seu repositório e informa quais arquivos foram modificados, adicionados ou ainda não estão sendo acompanhados pelo Git.",
+        "Ele mostra o estado atual do seu repositório e informa quais arquivos foram modificados, adicionados ou ainda não estão sendo acompanhados pelo Git.",
 
-            "Uma boa prática é utilizar git status frequentemente para entender o que está acontecendo no seu projeto."
-        ],
+        "Uma boa prática é utilizar git status frequentemente para entender o que está acontecendo no seu projeto."
+      ],
 
-        "sub-titulo6": "Git add: preparando alterações",
-        "git-add": [
-            "Depois de modificar seus arquivos, precisamos informar ao Git quais alterações queremos incluir no próximo registro.",
+      "sub-titulo6": "Git add: preparando alterações",
+      "git-add": [
+        "Depois de modificar seus arquivos, precisamos informar ao Git quais alterações queremos incluir no próximo registro.",
 
-            "É para isso que utilizamos o git add.",
+        "É para isso que utilizamos o git add.",
 
-            "/image/git/git-exemplo6.png",
+        "/image/git/git-exemplo6.png",
 
-            "Podemos adicionar um arquivo específico ou utilizar git add . para adicionar as alterações encontradas na pasta atual.",
+        "Podemos adicionar um arquivo específico ou utilizar git add . para adicionar as alterações encontradas na pasta atual.",
 
-            "Essa etapa é conhecida como staging. É como preparar as alterações que serão registradas no próximo commit."
-        ],
+        "Essa etapa é conhecida como staging. É como preparar as alterações que serão registradas no próximo commit."
+      ],
 
-        "sub-titulo7": "Git commit: registrando uma versão",
-        "git-commit": [
-            "Depois de preparar as alterações, podemos criar um commit.",
+      "sub-titulo7": "Git commit: registrando uma versão",
+      "git-commit": [
+        "Depois de preparar as alterações, podemos criar um commit.",
 
-            "Um commit representa um registro das alterações que foram adicionadas ao histórico do projeto.",
+        "Um commit representa um registro das alterações que foram adicionadas ao histórico do projeto.",
 
-            "/image/git/git-exemplo7.png",
+        "/image/git/git-exemplo7.png",
 
-            "Uma boa mensagem de commit deve explicar de maneira curta o que foi alterado.",
+        "Uma boa mensagem de commit deve explicar de maneira curta o que foi alterado.",
 
-            "Por exemplo: 'Adiciona página de artigos' é muito mais útil do que simplesmente escrever 'alterações'.",
+        "Por exemplo: 'Adiciona página de artigos' é muito mais útil do que simplesmente escrever 'alterações'.",
 
-            "Com o tempo, um histórico de commits bem organizado facilita bastante a compreensão da evolução do projeto."
-        ],
+        "Com o tempo, um histórico de commits bem organizado facilita bastante a compreensão da evolução do projeto."
+      ],
 
-        "sub-titulo8": "Git log: consultando o histórico",
-        "git-log": [
-            "Depois de criar alguns commits, podemos consultar o histórico utilizando git log.",
+      "sub-titulo8": "Git log: consultando o histórico",
+      "git-log": [
+        "Depois de criar alguns commits, podemos consultar o histórico utilizando git log.",
 
-            "/image/git/git-exemplo8.png",
+        "/image/git/git-exemplo8.png",
 
-            "O comando mostra informações sobre os commits realizados, incluindo mensagens, autores e datas.",
+        "O comando mostra informações sobre os commits realizados, incluindo mensagens, autores e datas.",
 
-            "Isso permite entender como o projeto chegou ao estado atual."
-        ],
+        "Isso permite entender como o projeto chegou ao estado atual."
+      ],
 
-        "sub-titulo9": "Git branch: trabalhando com versões diferentes",
-        "git-branch": [
-            "Branches, ou ramificações, permitem trabalhar em uma linha de desenvolvimento diferente sem alterar diretamente a branch principal.",
+      "sub-titulo9": "Git branch: trabalhando com versões diferentes",
+      "git-branch": [
+        "Branches, ou ramificações, permitem trabalhar em uma linha de desenvolvimento diferente sem alterar diretamente a branch principal.",
 
-            "/image/git/git-exemplo9.png",
+        "/image/git/git-exemplo9.png",
 
-            "Imagine que seu projeto está funcionando e você quer desenvolver uma nova funcionalidade. Em vez de fazer todas as alterações diretamente na versão principal, você pode criar uma branch para trabalhar nessa funcionalidade.",
+        "Imagine que seu projeto está funcionando e você quer desenvolver uma nova funcionalidade. Em vez de fazer todas as alterações diretamente na versão principal, você pode criar uma branch para trabalhar nessa funcionalidade.",
 
-            "Esse conceito se torna ainda mais importante quando várias pessoas trabalham no mesmo projeto."
-        ],
+        "Esse conceito se torna ainda mais importante quando várias pessoas trabalham no mesmo projeto."
+      ],
 
-        "sub-titulo10": "Git push: enviando para o GitHub",
-        "git-push": [
-            "Depois de criar commits localmente, podemos enviar essas alterações para um repositório remoto utilizando git push.",
+      "sub-titulo10": "Git push: enviando para o GitHub",
+      "git-push": [
+        "Depois de criar commits localmente, podemos enviar essas alterações para um repositório remoto utilizando git push.",
 
-            "/image/git/git-exemplo10.png",
+        "/image/git/git-exemplo10.png",
 
-            "É nesse momento que suas alterações locais são enviadas para o repositório remoto, como um projeto hospedado no GitHub.",
+        "É nesse momento que suas alterações locais são enviadas para o repositório remoto, como um projeto hospedado no GitHub.",
 
-            "Esse comando é especialmente importante quando você deseja manter seu projeto disponível online ou compartilhá-lo com outras pessoas."
-        ],
+        "Esse comando é especialmente importante quando você deseja manter seu projeto disponível online ou compartilhá-lo com outras pessoas."
+      ],
 
-        "sub-titulo11": "Git pull: trazendo alterações",
-        "git-pull": [
-            "O caminho também pode acontecer no sentido contrário.",
+      "sub-titulo11": "Git pull: trazendo alterações",
+      "git-pull": [
+        "O caminho também pode acontecer no sentido contrário.",
 
-            "Se existem alterações no repositório remoto que ainda não estão no seu computador, podemos utilizar git pull para buscar e integrar essas alterações.",
+        "Se existem alterações no repositório remoto que ainda não estão no seu computador, podemos utilizar git pull para buscar e integrar essas alterações.",
 
-            "/image/git/git-exemplo11.png",
+        "/image/git/git-exemplo11.png",
 
-            "Esse comando é muito utilizado quando trabalhamos em equipe e outras pessoas também estão realizando alterações no mesmo projeto."
-        ],
+        "Esse comando é muito utilizado quando trabalhamos em equipe e outras pessoas também estão realizando alterações no mesmo projeto."
+      ],
 
-        "sub-titulo12": "O fluxo básico do Git",
-        "fluxo": [
-            "Apesar de existirem muitos comandos Git, você pode começar dominando um fluxo bastante simples.",
+      "sub-titulo12": "O fluxo básico do Git",
+      "fluxo": [
+        "Apesar de existirem muitos comandos Git, você pode começar dominando um fluxo bastante simples.",
 
-            "/image/git/git-exemplo12.png",
+        "/image/git/git-exemplo12.png",
 
-            "Primeiro você modifica os arquivos do projeto.",
+        "Primeiro você modifica os arquivos do projeto.",
 
-            "Depois verifica o que mudou com git status.",
+        "Depois verifica o que mudou com git status.",
 
-            "Em seguida adiciona as alterações com git add.",
+        "Em seguida adiciona as alterações com git add.",
 
-            "Depois cria um registro utilizando git commit.",
+        "Depois cria um registro utilizando git commit.",
 
-            "Por fim, quando estiver trabalhando com um repositório remoto, envia as alterações utilizando git push.",
+        "Por fim, quando estiver trabalhando com um repositório remoto, envia as alterações utilizando git push.",
 
-            "De maneira resumida:",
+        "De maneira resumida:",
 
-            "git status → git add → git commit → git push"
-        ],
+        "git status → git add → git commit → git push"
+      ],
 
-        "sub-titulo13": "Os comandos que você precisa conhecer primeiro",
-        "comandos": [
-            "Você não precisa decorar todos os comandos Git para começar.",
+      "sub-titulo13": "Os comandos que você precisa conhecer primeiro",
+      "comandos": [
+        "Você não precisa decorar todos os comandos Git para começar.",
 
-            "Concentre-se inicialmente nestes:",
+        "Concentre-se inicialmente nestes:",
 
-            "/image/git/git-exemplo13.png"
-        ],
+        "/image/git/git-exemplo13.png"
+      ],
 
-        "sub-titulo14": "Git parece complicado no começo?",
-        "pratica": [
-            "É normal que Git pareça confuso no início. Existem muitos comandos e alguns conceitos novos, como staging, commit, branch, merge e repositório remoto.",
+      "sub-titulo14": "Git parece complicado no começo?",
+      "pratica": [
+        "É normal que Git pareça confuso no início. Existem muitos comandos e alguns conceitos novos, como staging, commit, branch, merge e repositório remoto.",
 
-            "Mas você não precisa aprender tudo de uma vez.",
+        "Mas você não precisa aprender tudo de uma vez.",
 
-            "Comece entendendo o ciclo básico:",
+        "Comece entendendo o ciclo básico:",
 
-            "Modificar → adicionar → commit → enviar",
+        "Modificar → adicionar → commit → enviar",
 
-            "Depois que esse fluxo se tornar natural, você pode começar a estudar branches, merge, conflitos e outros recursos.",
+        "Depois que esse fluxo se tornar natural, você pode começar a estudar branches, merge, conflitos e outros recursos.",
 
-            "O mais importante é praticar. Crie um pequeno projeto, faça alterações e observe como o Git registra cada etapa."
-        ],
+        "O mais importante é praticar. Crie um pequeno projeto, faça alterações e observe como o Git registra cada etapa."
+      ],
 
-        "sub-titulo-final": "Conclusão",
-        "conclusao": [
-            "Git é uma ferramenta que ajuda a controlar a evolução de um projeto e tornou-se praticamente indispensável no desenvolvimento de software moderno.",
+      "sub-titulo-final": "Conclusão",
+      "conclusao": [
+        "Git é uma ferramenta que ajuda a controlar a evolução de um projeto e tornou-se praticamente indispensável no desenvolvimento de software moderno.",
 
-            "No começo, a quantidade de comandos pode assustar, mas você não precisa conhecer todos eles para começar.",
+        "No começo, a quantidade de comandos pode assustar, mas você não precisa conhecer todos eles para começar.",
 
-            "Aprenda primeiro o fluxo básico: verificar as alterações, adicioná-las, criar um commit e enviar para o repositório remoto.",
+        "Aprenda primeiro o fluxo básico: verificar as alterações, adicioná-las, criar um commit e enviar para o repositório remoto.",
 
-            "Com a prática, conceitos como branches, merges e resolução de conflitos vão começar a fazer sentido naturalmente.",
+        "Com a prática, conceitos como branches, merges e resolução de conflitos vão começar a fazer sentido naturalmente.",
 
-            "E quanto antes você começar a utilizar Git nos seus próprios projetos, mais natural será trabalhar com ele quando chegar a hora de desenvolver projetos maiores ou trabalhar em equipe."
-        ]
+        "E quanto antes você começar a utilizar Git nos seus próprios projetos, mais natural será trabalhar com ele quando chegar a hora de desenvolver projetos maiores ou trabalhar em equipe."
+      ]
     }
-}
+  }
 ]

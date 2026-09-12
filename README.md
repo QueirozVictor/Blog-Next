@@ -4,11 +4,11 @@ Blog desenvolvido com **Next.js**, com o objetivo de apresentar conteúdos intro
 
 ## Tecnologias
 
-* Next.js
-* React
-* TypeScript
-* CSS Modules
-* JSON
+- Next.js
+- React
+- TypeScript
+- CSS Modules
+- JSON
 
 ## Como começar
 
@@ -45,7 +45,6 @@ http://localhost:3000
 ## Projeto online
 
 [BlogNext](https://blog-next-lake-seven.vercel.app/)
-
 
 ## Autor
 

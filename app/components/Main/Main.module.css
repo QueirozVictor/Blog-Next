@@ -1,27 +1,25 @@
-.main{
-    background-color: #f1f1f1;
-    padding: 10px;
-    color: #1f1f1f;
-    
+.main {
+  background-color: #f1f1f1;
+  padding: 10px;
+  color: #1f1f1f;
 }
 
-.main_container{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+.main_container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
-.main_title{
-    font-size: clamp(2rem, 3vw, 3rem);
-    font-weight: bolder;
-    text-align: center;
-    color: #0c2660;
+.main_title {
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: bolder;
+  text-align: center;
+  color: #0c2660;
 }
 
-.main_text{
-    text-align: center;
-    font-size: clamp(1.2rem, 2vw, 1.8rem);
-    align-self: center;
-    color: #555;
+.main_text {
+  text-align: center;
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  align-self: center;
+  color: #555;
 }
-

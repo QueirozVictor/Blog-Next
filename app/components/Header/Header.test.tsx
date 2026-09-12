@@ -2,53 +2,37 @@ import { render, screen } from "@testing-library/react";
 import Header from ".";
 
 describe("Header", () => {
+  test("deve exibir a logo do site", () => {
+    render(<Header />);
 
-    test("deve exibir a logo do site", () => {
+    const logo = screen.getByAltText("Logo do site");
 
-        render(<Header />);
+    expect(logo).toBeInTheDocument();
+  });
 
-        const logo = screen.getByAltText("Logo do site");
+  test("deve ter os links de navegação corretos", () => {
+    render(<Header />);
 
-        expect(logo).toBeInTheDocument();
+    const inicio = screen.getByRole("link", {
+      name: "Início",
     });
 
-
-    test("deve ter os links de navegação corretos", () => {
-
-        render(<Header />);
-
-        const inicio = screen.getByRole("link", {
-            name: "Início"
-        });
-
-        const sobre = screen.getByRole("link", {
-            name: "Sobre"
-        });
-
-        expect(inicio).toHaveAttribute(
-            "href",
-            "/"
-        );
-
-        expect(sobre).toHaveAttribute(
-            "href",
-            "/sobre"
-        );
+    const sobre = screen.getByRole("link", {
+      name: "Sobre",
     });
 
+    expect(inicio).toHaveAttribute("href", "/");
 
-    test("a logo deve levar para a página inicial", () => {
+    expect(sobre).toHaveAttribute("href", "/sobre");
+  });
 
-        render(<Header />);
+  test("a logo deve levar para a página inicial", () => {
+    render(<Header />);
 
-        const logo = screen.getByAltText("Logo do site");
+    const logo = screen.getByAltText("Logo do site");
 
-        const linkDaLogo = logo.closest("a");
+    const linkDaLogo = logo.closest("a");
 
-        expect(linkDaLogo).toHaveAttribute(
-            "href",
-            "/"
-        );
-    });
-
+    expect(linkDaLogo).toHaveAttribute("href", "/");
+  });
 });

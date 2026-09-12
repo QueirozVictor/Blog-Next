@@ -1,112 +1,105 @@
 .article {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    width: 100%;
-    max-width: 1000px;
+  width: 100%;
+  max-width: 1000px;
 
-    margin: 0 auto;
-    padding: 30px 20px;
+  margin: 0 auto;
+  padding: 30px 20px;
 }
-
 
 /* TÍTULO */
 
 .article_title {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
-    color: #0C2660;
+  color: #0c2660;
 
-    font-size: clamp(1.7rem, 4vw, 2.5rem);
-    font-weight: 700;
-    line-height: 1.2;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.2;
 }
-
 
 /* SUBTÍTULO */
 
 .article_subtitulo {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 
-    color: #5f6673;
+  color: #5f6673;
 
-    font-size: clamp(1.1rem, 2vw, 1.4rem);
-    font-weight: 400;
-    line-height: 1.6;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 400;
+  line-height: 1.6;
 }
-
 
 /* CONTAINER DO CONTEÚDO */
 
 .article_container {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 
-    margin-bottom: 30px;
-    padding: 28px;
+  margin-bottom: 30px;
+  padding: 28px;
 
-    background: #ffffff;
+  background: #ffffff;
 
-    border: 1px solid #e5e9f2;
-    border-radius: 14px;
+  border: 1px solid #e5e9f2;
+  border-radius: 14px;
 
-    box-shadow: 0 6px 20px rgba(12, 38, 96, 0.06);
+  box-shadow: 0 6px 20px rgba(12, 38, 96, 0.06);
 }
-
 
 /* IMAGEM */
 
 .article_container_img {
-    align-self: center;
+  align-self: center;
 
-    width: 100%;
-    max-width: 700px;
+  width: 100%;
+  max-width: 700px;
 
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
-    border-radius: 10px;
+  border-radius: 10px;
 }
-
 
 /* TEXTO */
 
 .article_container_p {
-    margin: 0;
+  margin: 0;
 
-    color: #3f4652;
+  color: #3f4652;
 
-    font-size: clamp(1rem, 2vw, 1.15rem);
-    line-height: 1.8;
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.8;
 }
-
 
 /* DESKTOP */
 
 @media (min-width: 650px) {
-    .article {
-        padding: 50px 30px;
-    }
+  .article {
+    padding: 50px 30px;
+  }
 
-    .article_container {
-        padding: 35px 40px;
-    }
+  .article_container {
+    padding: 35px 40px;
+  }
 
-    .article_container_p {
-        max-width: 800px;
-        margin: 0 auto;
-    }
+  .article_container_p {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }
-
 
 /* TELAS GRANDES */
 
 @media (min-width: 1000px) {
-    .article {
-        padding-top: 70px;
-    }
+  .article {
+    padding-top: 70px;
+  }
 
-    .article_container {
-        padding: 40px 50px;
-    }
+  .article_container {
+    padding: 40px 50px;
+  }
 }
