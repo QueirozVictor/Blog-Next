@@ -1,0 +1,88 @@
+# Nome do WorkFlow que aparece no Actions
+name: Pipeline CI/CD
+# Define quando o Pipeline sera disparado
+on: 
+  push:
+    branches:
+      - main
+    paths: #Só dispara se arquivos nessas pastas mudarem
+      - "Blog-Next/**" # Onde esta o codigo fonte
+      - ".github/workflows/**" # mudanças no proprio pipeline
+  workflow_dispatch: # Habilitar o botão "run workflow" no gitHub Actions
+      
+jobs:
+  # Primeiro Job: Build
+  build:
+    runs-on: ubuntu-latest # Imagem da maquina usada no CI
+    
+    steps:
+      - name: Checkout do Codigo
+        uses: actions/checkout@v6
+
+      - name: Instalação do Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: "npm"
+          cache-dependency-path: ./Blog-Next/package-lock.json
+
+      - name: Instalar as Dependencias
+        run: npm install
+        working-directory: ./Blog-Next
+
+      - name: Rodar o build
+        run: npm run build
+        working-directory: ./Blog-Next
+
+  tests:
+    runs-on: ubuntu-latest # Imagem da maquina usada no CI
+    needs: build
+
+    steps:
+      - name: Checkout do Codigo
+        uses: actions/checkout@v6
+
+      - name: Instalação do Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: "npm"
+          cache-dependency-path: ./Blog-Next/package-lock.json
+
+      - name: Instalar as Dependencias
+        run: npm install
+        working-directory: ./Blog-Next
+
+      - name: Rodar o Lint
+        run: npm run lint
+        working-directory: ./Blog-Next
+        
+      - name: Verificar formatação
+        run: npm run format -- --check
+        working-directory: ./Blog-Next
+
+      - name: Rodar os testes
+        run: npm run test
+        working-directory: ./Blog-Next
+        
+  deploy:
+    runs-on: ubuntu-latest # Imagem da maquina usada no CI
+    needs: tests
+
+    steps:
+      - name: Checkout do Codigo
+        uses: actions/checkout@v6
+
+      - name: Instalação do Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+
+      - name: Instalar Vercel CLI
+        run: npm install -g vercel@latest
+
+      - name: Deploy para Vercel
+        run: vercel --prod --yes --token=${{secrets.VERCEL_TOKEN}}
+        env:
+          VERCEL_PROJECT_ID: ${{secrets.VERCEL_PROJECT_ID}}
+          VERCEL_ORG_ID: ${{secrets.VERCEL_ORG_ID}}
