@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - "Blog-Next/**"
+      - "**"
       - ".github/workflows/**"
 
   workflow_dispatch:
