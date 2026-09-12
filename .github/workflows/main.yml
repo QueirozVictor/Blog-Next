@@ -4,7 +4,7 @@ name: Pipeline CI/CD
 on: 
   push:
     branches:
-      - main
+      - master
     paths: #Só dispara se arquivos nessas pastas mudarem
       - "Blog-Next/**" # Onde esta o codigo fonte
       - ".github/workflows/**" # mudanças no proprio pipeline
