@@ -1,4 +1,4 @@
-name: Pipeline CI/CD
+name: Pipeline CI/CD Blog-Next
 
 on:
   push:
@@ -18,6 +18,12 @@ jobs:
     steps:
       - name: Checkout do Codigo
         uses: actions/checkout@v6
+
+      - name: Ver estrutura do projeto
+        run: |
+          pwd
+          ls -la
+          find . -name "package-lock.json"
 
       - name: Instalação do Node
         uses: actions/setup-node@v7
