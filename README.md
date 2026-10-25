@@ -13,7 +13,9 @@ Cada página exibe *titulo*, *autor*, *data de publicação* e *conteúdo*, alem
 - CSS Modules
 - JSON
 ## Projeto Mobile
+
 ![Imagen do Projeto em funcionamento Mobile](./public/screenShotAppMobile.webp)
+
 ## Como começar
 
 Clone o repositório:
