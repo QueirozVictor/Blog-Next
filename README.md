@@ -1,14 +1,20 @@
 # BlogNext
 
-Blog desenvolvido com **Next.js**, com o objetivo de apresentar conteúdos introdutórios sobre desenvolvimento web para pessoas que estão começando na área.
+Projeto criado como um desafio proposto pelo curso de **Desenvolvedor Front-End** na **EBAC** com o objetivo de criar um blog em que a página inicial lista os artigos disponíveis e cada artigo tem sua própria rota dinâmica, identificada por um slug.
 
-## Tecnologias
+Cada página exibe *titulo*, *autor*, *data de publicação* e *conteúdo*, alem de conter seus próprios Metadados e SEO.
+
+
+## Tecnologias Utilizadas
 
 - Next.js
 - React
 - TypeScript
 - CSS Modules
 - JSON
+## Projeto Mobile
+
+![Imagen do Projeto em funcionamento Mobile](./public/screenShotAppMobile.webp)
 
 ## Como começar
 
