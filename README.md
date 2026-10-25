@@ -2,7 +2,7 @@
 
 Projeto criado como um desafio proposto pelo curso de **Desenvolvedor Front-End** na **EBAC** com o objetivo de criar um blog em que a página inicial lista os artigos disponíveis e cada artigo tem sua própria rota dinâmica, identificada por um slug.
 
-Cada página exibe *titulo*, *autor*, *data de publicação* e *conteúdo*, alem de conter seus próprios Metadados e SEO.
+Cada página exibe **titulo**, **autor**, **data de publicação** e **conteúdo**, alem de conter seus próprios Metadados e SEO.
 
 
 ## Tecnologias Utilizadas
@@ -14,7 +14,9 @@ Cada página exibe *titulo*, *autor*, *data de publicação* e *conteúdo*, alem
 - JSON
 ## Projeto Mobile
 
-![Imagen do Projeto em funcionamento Mobile](./public/screenShotAppMobile.webp)
+<p align="center">
+    <img src="./public/screenShotAppMobile.webp" alt="Imagem do projeto mobile" width="600" >
+</p>
 
 ## Como começar
 
