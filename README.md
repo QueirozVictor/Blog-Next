@@ -15,7 +15,7 @@ Cada página exibe **titulo**, **autor**, **data de publicação** e **conteúdo
 ## Projeto Mobile
 
 <p align="center">
-    <img src="./public/screenShotAppMobile.webp" alt="Imagem do projeto mobile" width="600" >
+    <img src="./public/screenShotAppMobile.webp" alt="Imagem do projeto mobile" width="400" >
 </p>
 
 ## Como começar
