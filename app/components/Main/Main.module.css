@@ -1,25 +1,4 @@
-.main {
-  background-color: #f1f1f1;
-  padding: 10px;
-  color: #1f1f1f;
-}
-
-.main_container {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-.main_title {
-  font-size: clamp(2rem, 3vw, 3rem);
-  font-weight: bolder;
-  text-align: center;
-  color: #0c2660;
-}
-
-.main_text {
-  text-align: center;
-  font-size: clamp(1.2rem, 2vw, 1.8rem);
-  align-self: center;
-  color: #555;
-}
+.main { padding: clamp(64px, 9vw, 108px) 20px 64px; background: #f3f2ed; color: #252b33; }
+.main_container { width: min(820px, 100%); margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 20px; text-align: center; }
+.main_title { max-width: 760px; color: #294b43; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.35rem, 5.4vw, 4.25rem); font-weight: 500; letter-spacing: -.045em; line-height: 1.08; }
+.main_text { max-width: 570px; color: #69717b; font-size: clamp(1.03rem, 2vw, 1.2rem); line-height: 1.75; }
